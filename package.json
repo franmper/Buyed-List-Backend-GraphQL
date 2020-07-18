@@ -1,0 +1,23 @@
+{
+  "name": "buyed",
+  "version": "0.1.0",
+  "description": "Web App para listar los productos que se compraran en el supermercado",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Francisco Peralta",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.16.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
