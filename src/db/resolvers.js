@@ -23,7 +23,7 @@ const resolvers = {
         console.log(e);
       }
     },
-    getListsById: async (_, {id}, context) => {
+    getListById: async (_, {id}, context) => {
       try {
         const list = List.findById(id);
         if(list.userId.toString() !== context.user.id ) throw new Error("No tiene autorizacion para actualizar al usuario");

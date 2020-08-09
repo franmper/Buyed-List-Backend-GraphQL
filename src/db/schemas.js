@@ -69,9 +69,8 @@ const typeDefs = gql`
       getUser(token: String!): User
 
       getLists: [List]
-      getListsById(id: ID!): List
+      getListById(id: ID!): List
       getListsByStatus(status: String!): [List]
-      getListsByCost(cost: Int!): [List]
       getListsByCreateDate(date: String!): [List]
       getListsByBuyedDate(date: String!): [List]
    }
