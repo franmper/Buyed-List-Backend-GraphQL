@@ -7,6 +7,8 @@ require("dotenv").config({ path: "../.env" });
 
 connectDB();
 
+const PORT = process.env.PORT || 5500;
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
@@ -26,6 +28,6 @@ const server = new ApolloServer({
   }
 });
 
-server.listen().then(({ url }) => {
+server.listen({ port: PORT }).then(({ url }) => {
   console.log(`servidor listo en la url ${url}`);
 });

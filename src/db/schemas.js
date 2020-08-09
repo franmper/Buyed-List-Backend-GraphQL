@@ -41,6 +41,11 @@ const typeDefs = gql`
       email: String!
       password: String!
    }
+   input UserUpdateInput {
+      name: String
+      email: String
+      password: String
+   }
    input AuthInput {
       email: String!
       password: String!
@@ -53,11 +58,10 @@ const typeDefs = gql`
       status: ListStatus
    }
    input ListItemInput {
-      id: ID
       name: String!
       cost: Float!
       quantity: Int!
-      brande: String
+      brand: String
       description: String
    }
 
@@ -74,7 +78,7 @@ const typeDefs = gql`
    type Mutation {
       newUser(user: UserInput): User
       authUser(user: AuthInput): Token
-      updateUser(id: ID!, user: UserInput): User
+      updateUser(id: ID!, user: UserUpdateInput): User
 
       newList(list: ListInput): List
       updateList(id: ID!, list: ListInput): List
