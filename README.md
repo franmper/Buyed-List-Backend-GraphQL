@@ -27,7 +27,7 @@ Requerimientos NodeJS, MongoDB Url
 
 Crear .env archivo con el format del archivo .env.example
 
-1 - Git clone
-2 - Npm Install
-3 - Npm run dev
+- Git clone
+- Npm Install
+- Npm run dev
 
