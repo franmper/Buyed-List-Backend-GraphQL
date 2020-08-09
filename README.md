@@ -1,9 +1,9 @@
 # Buyed Backend
 CRUD para buyed app hecho en GraphQL y MongoDB.
 
-### V0.1
+## V0.1
 
-#### Queries
+Queries
 
 - getUser (Devuelve los datos del usuario logueado)
 - getLists (Devuelve las listas del usuario logueado)
@@ -12,7 +12,7 @@ CRUD para buyed app hecho en GraphQL y MongoDB.
 - getListsByCreateDate (Devuelve listas creadas en un rango de tiempo)
 - getListsByBuyedDate (Devuelve listas compradas en un rango de tiempo)
 
-#### Mutations
+Mutations
 
 - newUser (Crea un usuario)
 - authUser (Login)
@@ -21,7 +21,7 @@ CRUD para buyed app hecho en GraphQL y MongoDB.
 - updateList (Actualiza una lista)
 - deleteList (Elimina una lista)
       
-### Usar 
+## Usar 
 
 Requerimientos NodeJS, MongoDB Url
 
